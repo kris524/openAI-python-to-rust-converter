@@ -31,41 +31,17 @@ def index():
 def generate_prompt(code):
     return """
 #Convert this from Python to Rust
-
-
-Python: a= 10
-
-#End
+#Python version
+Python: b = 10
 
 #Rust version
-
-Rust: let a = 10;
-
-#End
+Rust: let b: i32 = 10
 
 #Python version
 Python: {}
-# End
 
 #Rust version
 Rust:
-
-
 """.format(
         code
     )
-
-
-# Python:
-# a = 1
-# b = 2
-# def sum(i,j): return i+j
-# res = sum(a,b)  
-# return res
-
-# Rust:
-# let a = 1;
-# let b = 2;
-# fn sum(i: i32, j: i32) -> i32 {i + j}
-# let res = sum(a, b);
-# return res;
