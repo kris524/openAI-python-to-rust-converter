@@ -23,8 +23,8 @@ input {
 }
 
 body {
-  display: block;
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   padding-top: 60px;
 
